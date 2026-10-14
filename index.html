@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05090d">
+  <title>PURSUE — Records Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="government-bar">
+    <span class="flag">🇺🇸</span>
+    <span>An official website of the United States Government</span>
+    <button id="govToggle" class="text-button">Here's how you know <span class="chevron">⌄</span></button>
+    <div class="socials" aria-label="Social links">
+      <a href="#social-x" aria-label="X">𝕏</a><a href="#facebook" aria-label="Facebook">f</a>
+      <a href="#instagram" aria-label="Instagram">◎</a><a href="#linkedin" aria-label="LinkedIn">in</a><a href="#youtube" aria-label="YouTube">▶</a>
+    </div>
+  </div>
+  <div id="govInfo" class="gov-info" hidden>
+    <span>🇺🇸</span><div><strong>Official websites use .gov</strong><p>This is a fictional educational recreation. It is not an official government website.</p></div>
+    <span>🔒</span><div><strong>Secure .gov websites use HTTPS</strong><p>This local demo does not collect or transmit any information.</p></div>
+  </div>
+  <header class="main-header">
+    <a class="brand" href="#top" aria-label="Department of War home">
+      <span class="seal">▤</span><span>U.S. Department of War</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#news">News</a><a href="#multimedia">Multimedia</a><a href="#spotlights">Spotlights</a><a href="#about">About</a><a href="#resources">Resources</a><a href="#ufo">UFO</a>
+      <button id="searchToggle" class="search-button" aria-label="Open search">⌕</button>
+    </nav>
+    <button id="menuToggle" class="menu-button" aria-label="Toggle navigation">☰</button>
+  </header>
+  <form id="searchPanel" class="search-panel" hidden>
+    <label for="searchInput">Search this archive</label>
+    <input id="searchInput" type="search" placeholder="Search releases, records, topics…">
+    <button type="submit">Search</button>
+    <button type="button" id="closeSearch" class="close-search">Close</button>
+    <p id="searchStatus" role="status"></p>
+  </form>
+
+  <main id="top" class="archive">
+    <div class="topline">
+      <div class="project-name">PRESIDENTIAL UNSEALING AND REPORTING<br>SYSTEM FOR UAP ENCOUNTERS (PURSUE)</div>
+      <nav class="subnav" aria-label="Archive navigation">
+        <a class="active" href="#intro"><span>›</span> INTRO</a><a href="#about">ABOUT</a>
+        <a href="#releases">RELEASES</a><a href="#learn">LEARN MORE</a>
+      </nav>
+      <div class="coordinates"><span id="clock">07:32</span><br><span>38°52′15″N, 77°03′18″W</span></div>
+    </div>
+
+    <section id="intro" class="release-row">
+      <div class="release-label"><strong>RELEASE 06</strong><span>ANNOUNCEMENT</span></div>
+      <p class="release-copy">THE DEPARTMENT OF WAR JUST RELEASED THE <a href="#records" class="accent">SIXTH TRANCHE OF RECORDS</a> UNDER PURSUE. THE FIRST TRANCHE WAS RELEASED ON MAY 8, 2026. SCROLL DOWN TO VIEW THE SIXTH TRANCHE, RELEASED ON SEPT. 18, 2026.</p>
+      <time class="date" datetime="2026-09-18">[09 18 26]</time>
+    </section>
+
+    <section id="records" class="gallery" aria-label="Declassified record gallery">
+      <button class="arrow prev" id="prevRecord" aria-label="Previous record">‹</button>
+      <div class="filmstrip" id="filmstrip" aria-label="Record thumbnails"></div>
+      <button class="arrow next" id="nextRecord" aria-label="Next record">›</button>
+      <div class="featured-record">
+        <button id="openRecord" class="document-frame" aria-label="Open selected record">
+          <div class="document-page" id="documentPage">
+            <div class="doc-top">U.S. GOVERNMENT • DECLASSIFIED</div>
+            <div class="doc-line wide"></div><div class="doc-line"></div><div class="doc-line mid"></div>
+            <div class="doc-paragraph">REPORT OF OBSERVATION<br>REFERENCE: UAP / FIELD ARCHIVE<br>DATE: 18 SEPTEMBER 2026</div>
+            <div class="doc-line wide"></div><div class="doc-line mid"></div><div class="doc-line"></div>
+            <div class="doc-line short"></div><div class="doc-stamp">RELEASED</div>
+          </div>
+        </button>
+        <div class="record-progress" id="recordProgress"></div>
+      </div>
+      <div class="gallery-hint">SELECT A RECORD TO INSPECT <span>↗</span></div>
+    </section>
+
+    <section class="quote-row" id="news">
+      <div class="release-label"><strong>DONALD J. TRUMP</strong><span>TRUTH SOCIAL</span></div>
+      <p class="release-copy">BASED ON THE TREMENDOUS INTEREST SHOWN, I WILL BE DIRECTING THE SECRETARY OF WAR, AND OTHER RELEVANT DEPARTMENTS AND AGENCIES, TO BEGIN THE PROCESS OF IDENTIFYING AND RELEASING GOVERNMENT FILES RELATED TO ALIEN AND EXTRATERRESTRIAL LIFE, UNIDENTIFIED AERIAL PHENOMENA (UAP), AND UNIDENTIFIED FLYING OBJECTS (UFOS), AND ANY AND ALL OTHER INFORMATION CONNECTED TO THESE HIGHLY COMPLEX, BUT EXTREMELY INTERESTING AND IMPORTANT, MATTERS. GOD BLESS AMERICA!</p>
+      <time class="date">[02 19 26]</time>
+    </section>
+
+    <section class="lower-content" id="releases">
+      <div><span class="eyebrow">ARCHIVE INDEX / 06</span><h2>THE SIXTH TRANCHE</h2><p>Browse the released records. Select any document above to open its archive details.</p></div>
+      <div class="index-list">
+        <button data-record="0"><span>01</span> Field observation report <span>↗</span></button>
+        <button data-record="1"><span>02</span> Radar tracking summary <span>↗</span></button>
+        <button data-record="2"><span>03</span> Photographic evidence <span>↗</span></button>
+        <button data-record="3"><span>04</span> Witness statement <span>↗</span></button>
+        <button data-record="4"><span>05</span> Flight path analysis <span>↗</span></button>
+        <button data-record="5"><span>06</span> Technical memorandum <span>↗</span></button>
+      </div>
+    </section>
+    <footer><span>PURSUE / PUBLIC RECORDS INTERFACE</span><span>EDUCATIONAL RECREATION · LOCAL DEMO</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </main>
+
+  <dialog id="recordDialog" class="record-dialog">
+    <button id="closeDialog" class="dialog-close" aria-label="Close record">×</button>
+    <div class="dialog-kicker">PURSUE / DECLASSIFIED RECORD</div>
+    <div id="dialogDocument" class="dialog-document"></div>
+    <div class="dialog-details"><span id="dialogNumber">RECORD 01 / 06</span><h2 id="dialogTitle">Field observation report</h2><p>This is a fictional sample record created for a front-end recreation. No real government files are included.</p><button id="downloadRecord">Export record summary ↗</button></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
